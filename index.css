@@ -333,3 +333,46 @@ div#slider figure {
   text-align: left;
   animation: 30s slidy infinite;
 }
+#main-logo {
+	margin: auto;
+}
+
+#main-container {
+	text-align: center;
+	background-image: url("https://static.pexels.com/photos/186642/pexels-photo-186642.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 0;
+	min-height: 100vh;
+	color: #f1f1f1;
+}
+
+#main-container h1 span,
+#main-container p span {
+	font-weight: 800;
+}
+
+#main-container p {
+	width: 50%;
+	margin: 20px auto;
+	font-size: 10px;
+}
+
+#clockdiv div {
+	display: inline-block;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+	margin: 20px 25px;
+	line-height: 100px;
+	font-size: 28px;
+	border-top: 1px solid #f1f1f1;
+}
+
+.smalltext {
+	font-size: 25px;
+}
