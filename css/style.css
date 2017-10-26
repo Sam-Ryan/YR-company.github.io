@@ -1230,4 +1230,12 @@ Responsive Styles
     width: 100%;
   }
 }
+
+.box {
+    width:600px;
+    text-align:center;
+}
+img {
+    margin:5px;
+}
 /*# sourceMappingURL=style.css.map */
