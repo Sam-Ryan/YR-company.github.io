@@ -114,7 +114,7 @@ ul > li {
 }
 
 .btn-blue {
-  background-color: #d02928;
+  background-color: #28a3d0;
   color: white;
 }
 
@@ -406,7 +406,8 @@ input[type="email"]:focus {
 *** Header ***
 *****************************************************/
 #header {
-  padding: 200px 0 510px;
+  padding: 200px 0 500px;
+  margin-top: 128px;
   background-image: url("../images/banner_background.jpg");
   background-repeat: no-repeat;
   background-position: center center;
