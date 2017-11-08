@@ -114,6 +114,10 @@ ul > li {
   padding: 14px 48px;
 }
 
+.btn-download{
+  background-color: yellow;
+  color: white;
+}
 .btn-blue {
   background-color: black;
   color: white;
