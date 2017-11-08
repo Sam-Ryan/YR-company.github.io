@@ -35,6 +35,7 @@ h2 {
   font-size: 52px;
   line-height: 52px;
   margin-bottom: 64px;
+  color: white;
 }
 
 h3 {
@@ -61,7 +62,7 @@ p.subtitle {
 p {
   font-size: 18px;
   line-height: 28px;
-  color: #8c8f94;
+  color: white;
 }
 
 a {
@@ -167,6 +168,7 @@ input[type="email"]:focus {
   width: 502px;
   max-width: 100%;
   margin: 0 auto;
+  color: white;
 }
 
 #ready-to-buy .form-group .btn,
@@ -272,7 +274,7 @@ input[type="email"]:focus {
   top: 0;
   padding: 40px;
   z-index: 50;
-  background: #26272d;
+  background: #2C2F33;
   transition: left 0.7s cubic-bezier(0.545, 0, 0.05, 1);
 }
 
@@ -462,6 +464,7 @@ input[type="email"]:focus {
 #iphone-feature {
   position: relative;
   padding: 240px 0 330px;
+  background-color: #2C2F33;
 }
 
 #iphone-feature .btns-container {
@@ -495,6 +498,7 @@ input[type="email"]:focus {
   padding: 120px 0 140px;
   position: relative;
   overflow: hidden;
+  background-color: #2C2F33;
 }
 
 #map-feature .partners {
@@ -602,7 +606,7 @@ input[type="email"]:focus {
 *****************************************************/
 #ready-to-buy {
   padding: 120px 0 130px;
-  background-color: #f4f4f5;
+  background-color: #2C2F33;
 }
 
 #ready-to-buy form {
@@ -744,7 +748,7 @@ input[type="email"]:focus {
 *****************************************************/
 #plan {
   padding: 160px 0 190px;
-  background-color: #f4f4f5;
+  background-color: #2C2F33;
 }
 
 #plan .subtitle {
@@ -923,6 +927,7 @@ input[type="email"]:focus {
 *****************************************************/
 #subscribe {
   padding: 90px 0 50px;
+
 }
 
 #subscribe .btn {
@@ -942,6 +947,7 @@ input[type="email"]:focus {
 #footer {
   color: #8c8f94;
   font-size: 16px;
+  background-color: #2C2F33;
 }
 
 #footer .footer-container {
@@ -971,12 +977,12 @@ input[type="email"]:focus {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #26272d;
+  color: white;
   font-size: 12px;
 }
 
 #footer ul li a {
-  color: #8c8f94;
+  color: white;
   text-decoration: none;
   line-height: 36px;
 }
@@ -996,7 +1002,7 @@ input[type="email"]:focus {
 }
 
 #footer .socials li a {
-  color: rgba(19, 19, 21, 0.3);
+  color: white;
 }
 
 #footer .socials li:last-child {
