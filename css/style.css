@@ -114,7 +114,7 @@ ul > li {
 }
 
 .btn-blue {
-  background-color: #28a3d0;
+  background-color: black;
   color: white;
 }
 
@@ -1233,3 +1233,8 @@ Responsive Styles
 }
 
 
+.uicontainer {
+
+	padding-left: 46%;
+	margin: center;
+}
