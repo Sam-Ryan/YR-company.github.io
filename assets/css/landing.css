@@ -2692,8 +2692,8 @@ h6.text-light,
 }
 
 .text-light.btn-primary, .text-light .btn-primary {
-  background: #ffffff !important;
-  color: #303c40 !important;
+  background: black !important;
+  color: white !important;
 }
 .text-light.btn-primary:hover, .text-light .btn-primary:hover {
   background: rgba(255, 255, 255, 0.9) !important;
