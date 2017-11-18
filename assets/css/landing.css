@@ -2748,8 +2748,8 @@ h6.text-light,
   color: white;
 }
 
-#analyticsCustom {
+.element-top-20 .element-bottom-60 {
 	color: : white;
 	font-weight: bold;
-	border: 1px;
+	font-size: 30px;
 }
