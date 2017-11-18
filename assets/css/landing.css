@@ -2747,3 +2747,9 @@ h6.text-light,
   background-color: black;
   color: white;
 }
+
+#analyticsCustom {
+	color: : white;
+	font-weight: bold;
+	border: 1px;
+}
