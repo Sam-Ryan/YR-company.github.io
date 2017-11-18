@@ -1,114 +1,447 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
+<!doctype html>
+<html class="no-js" lang="">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Site En Cours De Maintenance | Yougraph Company | Application</title>
-	<meta name="description" content="Some WebGL experiments with raindrop effects" />
-	<meta name="keywords" content="webgl, raindrops, effect, rain, web, video, background" />
-	<meta name="author" content="Lucas Bebber for Codrops" />
-	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="css/demo.css" />
-	<link rel="stylesheet" type="text/css" href="css/style1.css" />
-	<!--[if IE]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-</head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title> Yougraph Company | Applications </title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,700&amp;subset=latin" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/extras.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/theme.min.css">
+    <link rel="stylesheet" href="assets/css/landing.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-touch-icon-144x144.png">
+    <link rel="icon" type="image/png" href="assets/images/landing/favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/images/landing/favicon.ico" sizes="96x96">
+    <link rel="icon" type="image/png" href="assets/images/landing/favicon.ico" sizes="16x16">
+    <link rel="shortcut icon" href="assets/images/landing/favicon.ico"> </head>
 
-<body class="demo-1">
-	<div class="image-preload">
-		<img src="img/drop-color.png" alt="">
-		<img src="img/drop-alpha.png" alt="">
-		<img src="img/weather/texture-rain-fg.png" />
-		<img src="img/weather/texture-rain-bg.png" />
-		<img src="img/weather/texture-sun-fg.png" />
-		<img src="img/weather/texture-sun-bg.png" />
-		<img src="img/weather/texture-fallout-fg.png" />
-		<img src="img/weather/texture-fallout-bg.png" />
-		<img src="img/weather/texture-drizzle-fg.png" />
-		<img src="img/weather/texture-drizzle-bg.png" />
-	</div>
-	<div class="container">
-		<header class="codrops-header">
-			<div class="codrops-links">
-				
-			</div>
-			<h1 style="color:white;">Yougraph Company</h1>
-			<nav class="codrops-demos">
-				<a class="current-demo" href="index.html">Maintenance</a>
-				<a target="_blank" href="index.html">Applications</a>
-				<a target="_blank" href="index6.html">Descriptions</a>
-			</nav>
-		</header>
-		<div class="slideshow">
-			<canvas width="1" height="1" id="container" style="position:absolute"></canvas>
-			<!-- Heavy Rain -->
-			<div class="slide" id="slide-1" data-weather="rain">
-				<div class="slide__element slide__element--date"><h1>Maintenance en cours </br> Merci de votre compréhension</h1></div>
-				<div class="slide__element slide__element--temp">48<small>H</small></div>
-				<div class="construction-message">
-		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="100.001px" height="70px" viewBox="0 0 100 68">
-<g id="large">
-	<g>
-	<path d="M55.777,38.473l6.221-1.133c0.017-1.791-0.123-3.573-0.41-5.324l-6.321-0.19c-0.438-2.053-1.135-4.048-2.076-5.931
-		l4.82-4.094c-0.868-1.552-1.874-3.028-3.005-4.417l-5.569,2.999c-1.385-1.54-2.98-2.921-4.771-4.099l2.124-5.954
-		c-0.759-0.452-1.543-0.878-2.357-1.269c-0.811-0.39-1.625-0.732-2.449-1.046l-3.325,5.381c-2.038-0.665-4.113-1.052-6.183-1.174
-		L31.34,6.002c-1.792-0.02-3.571,0.119-5.32,0.406l-0.191,6.32c-2.056,0.439-4.051,1.137-5.936,2.08l-4.097-4.82
-		c-1.546,0.872-3.022,1.875-4.407,3.006l2.996,5.566c-1.54,1.384-2.925,2.985-4.104,4.778c-2.16-0.771-4.196-1.498-5.953-2.127
-		c-0.449,0.765-0.875,1.544-1.265,2.354c-0.39,0.811-0.733,1.63-1.049,2.457c1.587,0.981,3.424,2.119,5.377,3.325
-		c-0.662,2.037-1.049,4.117-1.172,6.186l-6.218,1.136c-0.021,1.789,0.12,3.566,0.407,5.321l6.32,0.188
-		c0.442,2.06,1.143,4.057,2.082,5.937l-4.818,4.095c0.872,1.549,1.873,3.026,3.009,4.412l5.563-2.998
-		c1.392,1.54,2.989,2.92,4.777,4.099l-2.121,5.954c0.756,0.446,1.538,0.871,2.348,1.258c0.813,0.394,1.633,0.739,2.462,1.05
-		l3.326-5.375c2.033,0.662,4.109,1.05,6.175,1.17l1.137,6.221c1.791,0.019,3.569-0.123,5.323-0.407l0.194-6.324
-		c2.053-0.438,4.045-1.136,5.927-2.079l4.093,4.817c1.55-0.865,3.026-1.87,4.414-2.999l-2.995-5.572
-		c1.537-1.385,2.914-2.98,4.093-4.772l5.953,2.127c0.448-0.761,0.878-1.545,1.268-2.356c0.388-0.808,0.729-1.631,1.047-2.458
-		l-5.378-3.324C55.268,42.615,55.655,40.542,55.777,38.473z M42.302,42.435c-3.002,6.243-10.495,8.872-16.737,5.866
-		c-6.244-2.999-8.872-10.493-5.867-16.736c3.002-6.244,10.495-8.873,16.736-5.869C42.676,28.698,45.306,36.19,42.302,42.435z"  fill="none" stroke="#E43"/>    <animateTransform 
-            attributeName="transform"
-            begin="0s"
-            dur="3s"
-            type="rotate"
-            from="0 31 37"
-            to="360 31 37"
-            repeatCount="indefinite" 
-    </animateTransform>
-</g>
-<g id="small">
-	<path d="M93.068,19.253L99,16.31c-0.371-1.651-0.934-3.257-1.679-4.776l-6.472,1.404c-0.902-1.436-2.051-2.735-3.42-3.819
-		l2.115-6.273c-0.706-0.448-1.443-0.867-2.213-1.238c-0.774-0.371-1.559-0.685-2.351-0.958l-3.584,5.567
-		c-1.701-0.39-3.432-0.479-5.118-0.284L73.335,0c-1.652,0.367-3.256,0.931-4.776,1.672l1.404,6.47
-		c-1.439,0.899-2.744,2.047-3.835,3.419c-2.208-0.746-4.38-1.476-6.273-2.114c-0.451,0.71-0.874,1.448-1.244,2.229
-		c-0.371,0.764-0.68,1.541-0.954,2.329c1.681,1.078,3.612,2.323,5.569,3.579c-0.399,1.711-0.486,3.449-0.291,5.145
-		c-2.086,1.034-4.143,2.055-5.936,2.945c0.368,1.648,0.929,3.25,1.67,4.769c1.954-0.426,4.193-0.912,6.468-1.405
-		c0.906,1.449,2.06,2.758,3.442,3.853l-2.117,6.27c0.708,0.449,1.439,0.865,2.218,1.236c0.767,0.371,1.551,0.685,2.338,0.96
-		c1.081-1.68,2.319-3.612,3.583-5.574c1.714,0.401,3.457,0.484,5.156,0.288L82.695,42c1.651-0.371,3.252-0.931,4.773-1.676
-		c-0.425-1.952-0.912-4.194-1.404-6.473c1.439-0.902,2.744-2.057,3.835-3.436l6.273,2.11c0.444-0.7,0.856-1.43,1.225-2.197
-		c0.372-0.777,0.691-1.569,0.963-2.361l-5.568-3.586C93.181,22.677,93.269,20.939,93.068,19.253z M84.365,24.062
-		c-1.693,3.513-5.908,4.991-9.418,3.302c-3.513-1.689-4.99-5.906-3.301-9.419c1.688-3.513,5.906-4.991,9.417-3.302
-		C84.573,16.331,86.05,20.549,84.365,24.062z" fill="none" stroke="#E43"/>  
-  <animateTransform 
-            attributeName="transform"
-            begin="0s"
-            dur="2s"
-            type="rotate"
-            from="0 78 21"
-            to="-360 78 21"
-            repeatCount="indefinite" 
-    </animateTransform>
-</g>
-</svg>
-			</div>
-			
-		</div>
-		<p class="nosupport">Sorry, but your browser does not support WebGL!</p>
-	</div>
-	<!-- /container -->
-	<script src="js/index.min.js"></script>
+<body class="transparent-header pace-on pace-dot">
+    <div class="pace-overlay"></div>
+    <div id="masthead" class="menu navbar navbar-static-top header-logo-left-menu-right oxy-mega-menu navbar-sticky text-caps" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".main-navbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <a href="http://yougraph.co" class="navbar-brand"> <img src="assets/images/landing/lambda-app-logo.png" alt="Lambda Html Bootstrap Theme"> App </a>
+            </div>
+            <div class="nav-container">
+                <nav class="collapse navbar-collapse main-navbar logo-navbar navbar-right" role="navigation">
+                    <div class="menu-container">
+                        <ul id="menu-main" class="nav navbar-nav">
+                            <li class="menu-item"> <a href="index.html#home">Applications</a> </li>
+                            <li class="menu-item"> <a href="index.html#features">Fonctionnalités</a> </li>
+                            <li class="menu-item"> <a href="index.html#design">Design</a> </li>
+                            <li class="menu-item"> <a href="index.html#screenshots">Screenshots</a> </li>
+                            <li class="menu-item"> <a href="index.html#testimonials">À propos</a> </li>
+                            <li class="menu-item nav-highlight-ghost"> <a href="https://goo.gl/XnB8io"><i class="menu-icon fa fa-shopping-cart"></i>&nbsp;Télécharger</a> </li>
+                        </ul>
+                    </div>
+                    <div class="menu-sidebar"></div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div id="content" role="main">
+        <article>
+            <section class="section" id="home">
+                <div class="background-media" style="background-image: url('assets/images/landing/app-01.jpg'); background-repeat:no-repeat; background-size:cover; background-attachment:scroll; background-position: 50% 0%;" data-start="background-position: 50% 0px"
+                data-0-top-bottom="background-position: 50% 300px"></div>
+                <div class="container container-vertical-middle">
+                    <div class="row vertical-middle">
+                        <div class="col-md-7 text-left small-screen-center">
+                            <h1 class="text-default element-top-20 element-bottom-20 text-light os-animation super light" data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+    					SNAPCHAT
+    				</h1>
+                            <div class="col-text-1 text-light bigger element-top-20 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3s">
+                                <p>L'application la plus puissante jamais créée. Commandez-la dès maintenant!</p>
+                            </div> <a href="https://goo.gl/XnB8io" class="btn btn-primary btn-lg  text-light btn-icon-right margin-right element-top-20 element-bottom-20 os-animation" target="_self" data-os-animation="fadeIn" data-os-animation-delay="0.3s">
+	    				IPHONE<i class="fa fa-apple"  data-animation="none"></i>
+					</a> </div>
+                        <div class="col-md-5 text-center small-screen-default">
+                            <div class="figure element-top-40 element-bottom-40 os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.4s"> <span class="figure-image">
+        					<img src="assets/images/landing/app-02.png" alt=""/>
+            			</span> </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="features">
+                <div class="container container-vertical-default">
+                    <div class="row vertical-default">
+                        <div class="col-md-2 text-default small-screen-default"></div>
+                        <div class="col-md-8 text-default small-screen-default">
+                            <h1 class="text-center element-top-60 element-bottom-20 text-normal os-animation big default" data-os-animation="fadeIn" data-os-animation-delay="0s">
+    					Fonctionnalités
+    				</h1>
+                            <div class="divider-border divider-border-center element-top-20 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                                <div class="divider-border-inner"></div>
+                            </div>
+                            <p class="lead text-center center text-normal element-top-20 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s"> Jetez un oeil à certaines de ces caractéristiques qui rendent Snapchat si unique.
+
+                                <br />Nous avons travaillé dur pour faire un produit qui se démarque de la foule. </p>
+                        </div>
+                        <div class="col-md-2 text-default small-screen-default"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container container-vertical-middle">
+                    <div class="row vertical-middle">
+                        <div class="col-md-4 text-default small-screen-default">
+                            <ul class="features-list text-normal element-top-20 element-bottom-20" data-os-animation="none" data-os-animation-delay="0s">
+                                <li class=" element-top-40 element-bottom-40 os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.1s">
+                                    <div class="features-list-icon box-animate" data-animation="" style="background-color:#72b4b6;"> <i class="icon-volume" style="color:#ffffff;"></i> </div>
+                                    <h3>Faîtes-vous connaître</h3>
+                                    <p>Grâce à nos filtres Snapchat qui s'adaptent à toutes les stories de vos réseaux sociaux faîtes vous entendre .</p>
+                                </li>
+                                <li class="element-top-40 element-bottom-40 os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.3s">
+                                    <div class="features-list-icon box-animate" data-animation="" style="background-color:#72b4b6"> <i class="icon-reload" style="color:#ffffff;"></i> </div>
+                                    <h3>Support 24/24h 7/7J</h3>
+                                    <p>Aucun besoin de payer pour les mises à jour!</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 text-center small-screen-default">
+                            <div class="figure element-top-20 element-bottom-20 scroll-to-id os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.1s">
+                                <a href="#buy" class="figure-image" target="_self"> <img src="assets/images/landing/app-03.png" alt="" /> </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-default small-screen-default">
+                            <ul class="features-list text-normal element-top-20 element-bottom-20" data-os-animation="none" data-os-animation-delay="0s">
+                                <li class=" element-top-40 element-bottom-40 os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.2s">
+                                    <div class="features-list-icon box-animate" data-animation="" style="background-color:#72b4b6"> <i class="icon-monitor" style="color:#ffffff;"></i> </div>
+                                    <h3>Design créatif</h3>
+                                    <p>Notre application re-designé vous séduira.</p>
+                                </li>
+                                <li class="element-top-40 element-bottom-40 os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.4s">
+                                    <div class="features-list-icon box-animate" data-animation="" style="background-color:#72b4b6"> <i class="icon-battery" style="color:#ffffff;"></i> </div>
+                                    <h3>économisez votre énergie et votre temps</h3>
+                                    <p>Conçu pour économiser de l'énergie de votre appareil et gagner en rapidité.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="design">
+                <div class="background-overlay grid-overlay-0" style="background-color: rgba(240,240,240,1);"></div>
+                <div class="container container-vertical-default">
+                    <div class="row vertical-default">
+                        <div class="col-md-12 text-default small-screen-default">
+                            <div class="row">
+                                <div class="col-md-2 text-default small-screen-default"></div>
+                                <div class="col-md-8 text-default small-screen-default">
+                                    <h1 class="text-center element-top-60 element-bottom-20 text-normal os-animation big default" data-os-animation="fadeIn" data-os-animation-delay="0s">
+    							Filtres Uniques
+    						</h1>
+                                    <div class="divider-border divider-border-center element-top-20 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                                        <div class="divider-border-inner"></div>
+                                    </div>
+                                    <p class="lead text-center center text-normal element-top-20 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s">  </p>
+                                </div>
+                                <div class="col-md-2 text-default small-screen-default"></div>
+                            </div>
+                            <div class="figure element-top-20 element-bottom-0 os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.3s">
+                                <a href="assets/images/landing/app-04.png" class="figure-image magnific" target="_self"> <img src="assets/images/landing/app-04.png" alt="" /> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="screenshots">
+                <div class="background-overlay grid-overlay-0 " style="background-color: rgba(240,240,240,0);"></div>
+                <div class="container-fullwidth container-vertical-default">
+                    <div class="row vertical-default">
+                        <div class="col-md-12 text-default small-screen-default">
+                            <div class="row">
+                                <div class="col-md-2 text-default small-screen-default"></div>
+                                <div class="col-md-8 text-default small-screen-default">
+                                    <h1 class="text-center element-top-60 element-bottom-20 text-normal os-animation big default" data-os-animation="fadeIn" data-os-animation-delay="0s">
+    							Screenshots
+    						</h1>
+                                    <div class="divider-border divider-border-center element-top-20 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                                        <div class="divider-border-inner"></div>
+                                    </div>
+                                    <p class="lead text-center center text-normal element-top-20 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s"> Nous avons travaillé dur pour faire un produit qui se distinguera de la foule.
+                                        <br /> Un design unique </p>
+                                </div>
+                                <div class="col-md-2 text-default small-screen-default"></div>
+                            </div>
+                            <div class="portfolio-container element-top-20 element-bottom-20 text-normal">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="portfolio-header clearfix">
+                                            <div class="portfolio-filters pull-right"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portfolio masonry no-transition" data-padding="15" data-col-xs="2" data-col-sm="4" data-col-md="4" data-col-lg="6" data-layout="fitRows">
+                                    <div class="masonry-item portfolio-item filter-screens" data-menu-order="1" data-date="2014-11-06T14:25:57+00:00" data-title="screen01" data-comments="0">
+                                        <div class="figure element-top-no-top element-bottom-no-bottom portfolio-os-animation image-filter-none image-filter-onhover fade-in text-center figcaption-middle normalwidth" data-os-animation="fadeIn" data-os-animation-delay="0s">
+                                            <a href="assets/images/landing/app-p-01.jpg" class="figure-image magnific" data-links="" target="_self"> <img src="assets/images/landing/app-p-01.jpg" alt="screen01" class="normalwidth" />
+                                                <div class="figure-overlay grid-overlay-0">
+                                                    <div class="figure-overlay-container">
+                                                        <div class="figure-caption"> <i class="icon-plus"></i> </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="masonry-item portfolio-item filter-screens" data-menu-order="2" data-date="2014-11-06T14:25:57+00:00" data-title="screen02" data-comments="0">
+                                        <div class="figure element-top-no-top element-bottom-no-bottom portfolio-os-animation image-filter-none image-filter-onhover fade-in text-center figcaption-middle normalwidth" data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                                            <a href="assets/images/landing/app-p-02.jpg" class="figure-image magnific" data-links="" target="_self"> <img src="assets/images/landing/app-p-02.jpg" alt="screen02" class="normalwidth" />
+                                                <div class="figure-overlay grid-overlay-0">
+                                                    <div class="figure-overlay-container">
+                                                        <div class="figure-caption"> <i class="icon-plus"></i> </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="masonry-item portfolio-item filter-screens" data-menu-order="3" data-date="2014-11-06T14:25:57+00:00" data-title="screen03" data-comments="0">
+                                        <div class="figure element-top-no-top element-bottom-no-bottom portfolio-os-animation image-filter-none image-filter-onhover fade-in text-center figcaption-middle normalwidth" data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                                            <a href="assets/images/landing/app-p-03.jpg" class="figure-image magnific" data-links="" target="_self"> <img src="assets/images/landing/app-p-03.jpg" alt="screen03" class="normalwidth" />
+                                                <div class="figure-overlay grid-overlay-0">
+                                                    <div class="figure-overlay-container">
+                                                        <div class="figure-caption"> <i class="icon-plus"></i> </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="masonry-item portfolio-item filter-screens" data-menu-order="4" data-date="2014-11-06T14:25:57+00:00" data-title="screen04" data-comments="0">
+                                        <div class="figure element-top-no-top element-bottom-no-bottom portfolio-os-animation image-filter-none image-filter-onhover fade-in text-center figcaption-middle normalwidth" data-os-animation="fadeIn" data-os-animation-delay="0.3s">
+                                            <a href="assets/images/landing/app-p-04.jpg" class="figure-image magnific" data-links="" target="_self"> <img src="assets/images/landing/app-p-04.jpg" alt="screen04" class="normalwidth" />
+                                                <div class="figure-overlay grid-overlay-0">
+                                                    <div class="figure-overlay-container">
+                                                        <div class="figure-caption"> <i class="icon-plus"></i> </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="masonry-item portfolio-item filter-screens" data-menu-order="5" data-date="2014-11-06T14:51:39+00:00" data-title="screen05" data-comments="0">
+                                        <div class="figure element-top-no-top element-bottom-no-bottom portfolio-os-animation image-filter-none image-filter-onhover fade-in text-center figcaption-middle normalwidth" data-os-animation="fadeIn" data-os-animation-delay="0.4s">
+                                            <a href="assets/images/landing/app-p-08.png" class="figure-image magnific" data-links="" target="_self"> <img src="assets/images/landing/app-p-08.png" alt="screen05" class="normalwidth" />
+                                                <div class="figure-overlay grid-overlay-0">
+                                                    <div class="figure-overlay-container">
+                                                        <div class="figure-caption"> <i class="icon-plus"></i> </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="masonry-item portfolio-item filter-screens" data-menu-order="6" data-date="2014-11-06T14:52:04+00:00" data-title="screen06" data-comments="0">
+                                        <div class="figure element-top-no-top element-bottom-no-bottom portfolio-os-animation image-filter-none image-filter-onhover fade-in text-center figcaption-middle normalwidth" data-os-animation="fadeIn" data-os-animation-delay="0.5s">
+                                            <a href="assets/images/landing/app-p-06.png" class="figure-image magnific" data-links="" target="_self"> <img src="assets/images/landing/app-p-06.png" alt="screen06" class="normalwidth" />
+                                                <div class="figure-overlay grid-overlay-0">
+                                                    <div class="figure-overlay-container">
+                                                        <div class="figure-caption"> <i class="icon-plus"></i> </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container container-vertical-middle">
+                    <div class="row vertical-middle">
+                        <div class="col-md-6 text-default small-screen-default">
+                            <div class="figure element-top-20 element-bottom-0 os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.3s">
+                                <a width="18%"  href="assets/images/landing/app-06.png" class="figure-image magnific" target="_self"> <img src="assets/images/landing/app-06.png" alt="app-06" /> </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-left small-screen-center">
+                            <h1 class="text-default element-top-60 element-bottom-20 text-normal os-animation big default" data-os-animation="fadeIn" data-os-animation-delay="0s">
+    					Nos Meilleures Applications
+    				</h1>
+                            <div class="divider-border divider-border-left element-top-20 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                                <div class="divider-border-inner"></div>
+                            </div>
+                            <p class="lead text-left left text-normal element-top-20 element-bottom-20" data-os-animation="none" data-os-animation-delay="0s"> Notre version est construite avec de nouvelles capacités et fonctionnalités incroyables conçues pour tirer le meilleur parti de votre créativité. Comme avec tous nos produits, vous obtiendrez <strong>100% de notre soutien solide</strong>.
+                                </p>
+                            <ul style="color:black;" class="skills-list lead element-top-20 element-bottom-40 text-normal os-animation" data-os-animation="fadeIn" data-os-animation-delay="0s">
+                                <p><b><li> <img width="18%" src="assets/images/landing/spotify.png"><a style="color:black;" href="#" onclick="window.location='itms-services://?action=download-manifest&amp;url=https://cdn.appvalley.vip/ipa/spotify.plist';"  class="btn btn-primary btn-lg  text-light btn-icon-right margin-right element-top-20 element-bottom-20 os-animation"> <i class="fa fa-apple"></i>  Spotify</a></li>
+                                <li> <img width="18%" src="assets/images/landing/dezzer.png"> <a style="color:black;" href="#" onclick="window.location='itms-services://?action=download-manifest&amp;url=https://cdn.appvalley.vip/ipa/dezzer.plist';"  class="btn btn-primary btn-lg  text-light btn-icon-right margin-right element-top-20 element-bottom-20 os-animation"><i class="fa fa-apple"></i>  Deezer </a></li>
+								<li> <img width="18%" src="assets/images/landing/whatsappicon.png"> <a style="color:black;" href="#" onclick="window.location='itms-services://?action=download-manifest&amp;url=https://cdn.appvalley.vip/ipa/vip.appvalley.wapp.plist';"  class="btn btn-primary btn-lg  text-light btn-icon-right margin-right element-top-20 element-bottom-20 os-animation"><i class="fa fa-apple"></i>  WhatsApp</a></li>
+								<li> <img width="18%" src="assets/images/landing/youtubeicon.png"> <a style="color:black;" href="#" onclick="window.location='itms-services://?action=download-manifest&amp;url=https://cdn.appvalley.vip/ipa/vip.appvalley.ytpp.plist';"  class="btn btn-primary btn-lg  text-light btn-icon-right margin-right element-top-20 element-bottom-20 os-animation"><i class="fa fa-apple"></i>  Youtube</a></li>
+								<li><img width="18%" src="assets/images/landing/tvicon.png"> <a href="#" onclick="window.location='itms-services://?action=download-manifest&amp;url=https://cdn.appvalley.vip/ipa/com.channelsapp.channels.plist';" class="btn btn-primary btn-lg  text-light btn-icon-right margin-right element-top-20 element-bottom-20 os-animation"><i class="fa fa-apple"></i> TV</a> </li></br>
+								<li><img width="18%" src="assets/images/landing/facebookicon.png"> <a href="#" onclick="window.location='itms-services://?action=download-manifest&amp;url=https://cdn.appvalley.vip/ipa/vip.appvalley.fbpp.plist';" class="btn btn-primary btn-lg  text-light btn-icon-right margin-right element-top-20 element-bottom-20 os-animation"><i class="fa fa-apple"></i> Facebook</a></li></br>
+								<li><img width="18%" class="icon" src="assets/images/landing/jodelicon.png"> <a href="https://goo.gl/h1XgpE" class="btn btn-primary btn-lg  text-light btn-icon-right margin-right element-top-20 element-bottom-20 os-animation"><i class="fa fa-apple"></i> Jodel </a></li></br>
+								<li><img width="18%" class="icon" src="assets/images/landing/2k18icon.png">	<a href="#" onclick="window.location='itms-services://?action=download-manifest&amp;url=https://cdn.appvalley.vip/ipa/com.2ksports.nba2k18.plist';" class="btn btn-primary btn-lg  text-light btn-icon-right margin-right element-top-20 element-bottom-20 os-animation"><i class="fa fa-apple"></i> NBA 2K18</a></li></br>
+								<li><img width="18%" class="icon" src="assets/images/landing/laragoicon.png">  <a href="#" onclick="window.location='itms-services://?action=download-manifest&amp;url=https://cdn.appvalley.vip/ipa/com.squareenixmontreal.lcgo.plist';" class="btn btn-primary btn-lg  text-light btn-icon-right margin-right element-top-20 element-bottom-20 os-animation"><i class="fa fa-apple"></i> Lara Croft GO</a></li></br>
+								<li><img width="18%" class="icon" src="assets/images/landing/moviebox.png">  <a href="#" onclick="window.location='itms-services://?action=download-manifest&amp;url=https://cdn.appvalley.vip/ipa/moviebox.plist';" class="btn btn-primary btn-lg  text-light btn-icon-right margin-right element-top-20 element-bottom-20 os-animation"><i class="fa fa-apple"></i> MovieBox</a></li> </br>
+								<li><img width="18%" class="icon" src="assets/images/landing/vkicon.png"> <a href="#" onclick="window.location='itms-services://?action=download-manifest&amp;url=https://cdn.appvalley.vip/ipa/com.vk.vkclient.plist';" class="btn btn-primary btn-lg  text-light btn-icon-right margin-right element-top-20 element-bottom-20 os-animation"><i class="fa fa-apple"></i> VK</a></li>
+                            </b></p></ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section text-normal section-text-no-shadow section-inner-no-shadow section-normal section-opaque" id="testimonials">
+                <div class="background-overlay grid-overlay-0 " style="background-color: rgba(240,240,240,1);"></div>
+                <div class="container container-vertical-middle">
+                    <div class="row vertical-middle">
+                        <div class="col-md-1 text-left small-screen-center"></div>
+                        <div class="col-md-10 text-default small-screen-default">
+                            <div id="flexslider-120" class="element-top-80 element-bottom-80 text-center text-normal os-animation flexslider feature-slider" data-os-animation="fadeIn" data-os-animation-delay="0s" data-flex-animation="slide" data-flex-controls-position="outside"
+                            data-flex-controlsalign="center" data-flex-directions="hide" data-flex-speed="7000" data-flex-controls="show" data-flex-slideshow="true">
+                                <ul class="slides">
+                                    <li>
+                                        <blockquote>
+                                            <p></p>
+                                            <div class="box box-small box-round">
+                                                <div class="box-dummy"></div>
+                                                <div class="box-inner"> <img width="180" height="180" src="https://feelinsonice-hrd.appspot.com/web/deeplink/snapcode?username=rayannairline&type=SVG&bitmoji=enable" class="attachment-thumbnail wp-post-image" alt="app-t-01" /> </div>
+                                            </div>
+                                            <footer>RAYANNAIRLINE<cite title="E-texon"></cite></footer>
+                                        </blockquote>
+                                    </li>
+                                    <li>
+                                        <blockquote>
+                                            <p></p>
+                                            <div class="box box-small box-round">
+                                                <div class="box-dummy"></div>
+                                                <div class="box-inner"> <img width="180" height="180" src="assets/images/yougraph.svg" class="attachment-thumbnail wp-post-image" alt="app-t-02" /> </div>
+                                            </div>
+                                            <footer>YOUGRAPH<cite title="Stimware"><cite></footer>
+                                        </blockquote>
+                                    </li>
+                                    <li>
+                                        <blockquote>
+                                            <p></p>
+                                            <div class="box box-small box-round">
+                                                <div class="box-dummy"></div>
+                                                <div class="box-inner"> <img width="180" height="180" src="assets/images/br.svg" class="attachment-thumbnail wp-post-image" alt="app-t-03" /> </div>
+                                            </div>
+                                            <footer>BR<cite title="overplex.com"></cite></footer>
+                                        </blockquote>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-1 text-default small-screen-default"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="section text-normal section-text-no-shadow section-inner-no-shadow section-normal section-opaque" id="buy">
+                <div class="background-media" style="background-image: url('assets/images/landing/app-01.jpg'); background-repeat:no-repeat; background-size:cover; background-attachment:fixed; background-position: 50% 0%;" data-start="background-position: 50% 0px"
+                data-0-top-bottom="background-position: 50% -84px"></div>
+                <div class="background-overlay"></div>
+                <div class="container container-vertical-top">
+                    <div class="row vertical-top">
+                        <div class="col-md-1 text-left small-screen-center"></div>
+                        <div class="col-md-10 text-center small-screen-default">
+                            <h1 class="text-default element-top-100 element-bottom-20 text-light os-animation big default" data-os-animation="fadeIn" data-os-animation-delay="0s">
+    						Commandez la dès maintenant
+    					</h1>
+                            <div class="divider-border divider-border-center element-top-20 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                                <div class="divider-border-inner" style="background:rgba(255, 255, 255, 0.76); "></div>
+                            </div>
+                            <div class="col-text-1 text-light big element-top-20 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                                <p>Notre version est disponible uniquement sur IOS.
+                                    <br />Commencez à vous faire connaitre dès aujourd'hui!</p>
+                            </div> <a href="https://goo.gl/XnB8io" class="btn btn-primary btn-lg text-light btn-icon-right margin-right element-top-20 element-bottom-20 os-animation" target="_self" data-os-animation="fadeIn" data-os-animation-delay="0.3s">
+	    					IPHONE<i class="fa fa-apple" data-animation="none"></i>
+						</a>
+
+                            <div class="divider-wrapper">
+                                <div class="visible-xs element-height-40"></div>
+                                <div class="visible-sm element-height-40"></div>
+                                <div class="visible-md element-height-40"></div>
+                                <div class="visible-lg element-height-40"></div>
+                            </div>
+                            <div class="element-top-20 element-bottom-60" data-os-animation="none" data-os-animation-delay="0s">
+                                <ul class="social-icons text-light social-lg social-simple social-circle ">
+                                    <li>
+                                        <a href="https://twitter.com" target="_blank" data-iconcolor="#00acee"> <i class="fa fa-twitter"></i> </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://plus.google.co" target="_blank" data-iconcolor="#dd1812"> <i class="fa fa-google-plus"></i> </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.facebook.com" target="_blank" data-iconcolor="#3b5998"> <i class="fa fa-facebook"></i> </a>
+                                    </li>
+                                    <li>
+                                        <a href="//pinterest.com/pin/create/button" target="_blank" data-iconcolor="#C92228"> <i class="fa fa-pinterest"></i> </a>
+                                    </li>
+                                </ul>
+
+								 <script type="text/javascript" >
+										var sc_project=11432063;
+										var sc_invisible=0;
+										var sc_security="a9e33b86";
+										var sc_text=3;
+										var scJsHost = (("https:" == document.location.protocol) ?
+										"https://secure." : "http://www.");
+										document.write("<sc"+"ript type='text/javascript' src='" +
+										scJsHost+
+										"statcounter.com/counter/counter.js'></"+"script>");
+										</script>
+										<noscript><div class="statcounter"><a title="free hit
+										counter" href="http://statcounter.com/" target="_blank"><img
+										class="statcounter"
+										src="//c.statcounter.com/11432063/0/a9e33b86/0/" alt="free
+										hit counter"></a></div></noscript>
+										<!-- End of StatCounter Code for Default Guide -->
+									<script>
+								  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+								  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+								  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+								  ga('create', 'UA-105151321-1', 'auto');
+								  ga('send', 'pageview');
+
+								</script>
+                            </div>
+                            <div class="divider-wrapper">
+                                <div class="visible-xs element-height-40"></div>
+                                <div class="visible-sm element-height-40"></div>
+                                <div class="visible-md element-height-40"></div>
+                                <div class="visible-lg element-height-40"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-1 text-default small-screen-default"></div>
+                    </div>
+                </div>
+            </section>
+            <div class="bullet-nav" data-show-tooltips="off">
+                <ul></ul>
+            </div>
+        </article>
+    </div>
+    <a class="go-top go-top-circle" href="javascript:void(0)"> <i class="fa fa-angle-up"></i> </a>
+
+    <script type="text/javascript">
+        var oxyThemeData = {
+            navbarHeight: 100,
+            navbarScrolled: 90,
+            navbarScrolledPoint: 30,
+            menuClose: 'off',
+            scrollFinishedMessage: 'No more items to load.',
+            hoverMenu:
+            {
+                hoverActive: false,
+                hoverDelay: 200,
+                hoverFadeDelay: 200
+            },
+            siteLoader: 'on'
+        };
+    </script>
+    <script src="assets/js/theme.min.js"></script>
 </body>
 
 </html>
