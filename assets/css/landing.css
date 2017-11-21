@@ -2753,3 +2753,62 @@ h6.text-light,
 	font-weight: bold;
 	font-size: 30px;
 }
+
+
+.icon-right {
+  background: url("../icon/icon-right.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  vertical-align: middle;
+  margin-left: 40px; }
+
+
+.icon-git {
+  background: url("../icon/icon-git.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  padding-right: 30px; }
+
+
+
+
+
+   .masthead .btn-hero {
+    border: 3px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 50px; }
+  .masthead .btn-hero:hover {
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-transition: background-color 500ms ease-out 0.2s;
+    -moz-transition: background-color 500ms ease-out 0.2s;
+    -o-transition: background-color 500ms ease-out 0.2s;
+    transition: background-color 500ms ease-out 0.2s; }
+
+
+
+
+
+
+.single-masthead {
+  padding: 0 0 40px; }
+  .single-masthead .btn-hero {
+    margin-top: 30px;
+    float: right; }
+
+
+    @media (max-width: 1024px) {
+  .call-to-action {
+    text-align: center; }
+    .call-to-action .btn-action {
+      margin-top: 0;
+      float: none; }
+  .single-masthead .btn-hero {
+    margin: 24px auto 0;
+    float: none; } }
