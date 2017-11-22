@@ -1,0 +1,226 @@
+/* ==========================================================================
+   MENU CONFIGURATION
+   ========================================================================== */
+
+.menu { /*Position of the menu itself*/
+	position: fixed;
+	left: -200px;
+	width: 260px;
+	height: 100%;
+	top: 0;
+	z-index: 10;
+	text-align: center;
+}
+
+.menu.menu-open {/*making the menu visable*/
+	left: 0px;
+}
+
+.menu-wrap {/*Wrapper for the menu*/
+	position: absolute;
+	top: 0;
+	padding: 20px 0;
+	overflow-y: auto;/*Used to ensure that the menu is scrollable when there are too many items to fit onto the screen*/
+	right: 60px;
+	background: #1a1a1a;/*CHANGE BACKGROUND COLOR*/
+	width: 200px;/*CHANGE WIDTH*/
+	height: 100%;/*CHANGE HEIGHT*/
+}
+
+.menu .social-icons a{
+	text-align: center;
+	display: inline-block;
+}
+
+.menu h1.logo a {/*NAME THAT APPEARS ON THE TOP*/
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	color: #D500F9;
+	letter-spacing: 0.15em;
+	line-height: 40px;
+	text-decoration: none;
+	text-transform: uppercase;
+	-webkit-transition: all 1s ease;
+	   -moz-transition: all 1s ease;
+		-ms-transition: all 1s ease;
+		 -o-transition: all 1s ease;
+			transition: all 1s ease;
+}
+
+.menu h1.logo a:hover {/*Hover Effects for name on the top*/
+	color: #fff;
+}
+
+.menu img.logo {/*STYE RULES IF YOU USE AN IMAGE AS THE COMPANY NAME*/
+	margin: 20px 0;
+	max-width: 160px;
+}
+
+.menu a {/*CONFIGURATION FOR MENU ITEMS*/
+	color: #808080;/*CHANGE COLOR OF MENU ITEMS*/
+	display: block;
+	font-size: 12px;/*CHANGE FONT SIZE*/
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	line-height: 35px;
+	text-decoration: none;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	-webkit-transition: all .7s ease;
+	   -moz-transition: all .7s ease;
+		-ms-transition: all .7s ease;
+		 -o-transition: all .7s ease;
+			transition: all .7s ease;
+}
+
+
+.menu a:hover {/*HOVER EFFECT FOR MENU ITEMS*/
+	color: #ffffff;
+}
+
+.menu a:active {/*EFFECT WHEN MENU ITEMS ARE CLICKED*/
+	color: #ffffff;
+}
+
+.menu a > i {/*ICONS INSIDE THE MENU*/
+font-size: 14px;
+margin: 20px 10px;
+}
+
+.menu-close {/*'X' BUTTON TO CLOSE MENU*/
+	cursor: pointer;
+	display: block;
+	position: absolute;
+	font-size: 14px;
+	color: #ff1744;
+	padding: 10px;
+	text-align: center;
+	top: 0;
+	left: 0;
+	-webkit-transition: all .5s ease-in-out;
+	   -moz-transition: all .5s ease-in-out;
+		-ms-transition: all .5s ease-in-out;
+		 -o-transition: all .5s ease-in-out;
+			transition: all .5s ease-in-out;
+}
+
+.menu-close:hover {/*HOVER EFFECT FOR 'X' BUTTON*/
+	color: #fff;
+}
+
+/* Push the body after clicking the menu button
+	This is an optional add on. what it does is pushes the body 200px to the left when the menu is opened
+	To use it, simply uncomment the commented code below
+ */
+/*.body-push {
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+}
+
+.body-push-toright {
+	left: 200px;
+}
+
+.body-push-toleft {
+	left: -200px;
+}*/
+
+.menu,
+.body-push {
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+		-ms-transition: all .3s ease;
+		 -o-transition: all .3s ease;
+			transition: all .3s ease;
+}
+
+#menuToggle {/*BACKGROUND OF THE ACTUAL MENU BUTTON*/
+	position: absolute;
+	top: 20px;
+	right: 0;
+	z-index: 11;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	color: #ffffff;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	cursor: pointer;
+	background: rgba(0,0,0,0.25);
+	-webkit-transition: all .5s ease-in-out;
+	   -moz-transition: all .5s ease-in-out;
+		-ms-transition: all .5s ease-in-out;
+		 -o-transition: all .5s ease-in-out;
+			transition: all .5s ease-in-out;
+}
+
+#menuToggle:hover {/*HOVER EFFECT FOR MENU BUTTON*/
+	color: #ffffff;
+	background: rgba(0,0,0,0.2);
+	-webkit-transition: all .5s ease-in-out;
+	   -moz-transition: all .5s ease-in-out;
+		-ms-transition: all .5s ease-in-out;
+		 -o-transition: all .5s ease-in-out;
+			transition: all .5s ease-in-out;
+}
+
+
+.fa-arrow-right{/*REPLACE WITH YOUR ICON CLASS IF YOU HAVE CHANGED THE MENU BUTTON ICON*/
+	-webkit-transition: all .5s ease-in-out;
+	   -moz-transition: all .5s ease-in-out;
+		-ms-transition: all .5s ease-in-out;
+		 -o-transition: all .5s ease-in-out;
+			transition: all .5s ease-in-out;
+}
+
+.rotate{/*REMOVE THE CODE BELOW IF YOU'D LIKE TO DISABLE THE ROTATION OF THE ICON WHEN THE MENU BUTTON IS CLICKED*/
+	transform: rotate(180deg);
+}
+
+/*AUTO HEIGHT*/
+
+.menu-height-auto{
+	height: auto !important;
+	padding: 30px 0;
+}
+/*
+																																	HOVER EFFECTS
+*/
+
+/*BORDER-BOTTOM*/
+
+.border-bottom{
+	border-bottom: 1px solid rgba(255,255,255,0);
+}
+
+.border-bottom:hover, .border-bottom:active, .border-bottom:focus{
+	color: #ffffff;
+	border-bottom: 1px solid rgba(255,255,255,1);
+}
+
+/*	BORDER-TOP */
+
+.border-top{
+	border-top: 1px solid rgba(255,255,255,0);
+}
+
+.border-top:hover, .border-top:active, .border-top:focus{
+	color: #ffffff;
+	border-top: 1px solid rgba(255,255,255,1);
+}
+
+/*BORDER-TOP AND BOTTOM */
+
+.border-top-bottom{
+	border-bottom: 1px solid rgba(255,255,255,0);
+	border-top: 1px solid rgba(255,255,255,0);
+}
+
+.border-top-bottom:hover, .border-top-bottom:active, .border-top-bottom:focus{
+	color: #ffffff;
+	border-bottom: 1px solid rgba(255,255,255,1);
+	border-top: 1px solid rgba(255,255,255,1);
+}
+
