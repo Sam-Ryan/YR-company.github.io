@@ -13,7 +13,7 @@
 }
 
 .menu.menu-open {/*making the menu visable*/
-	left: 0px;
+	left: 280px;
 }
 
 .menu-wrap {/*Wrapper for the menu*/
@@ -21,10 +21,11 @@
 	top: 0;
 	padding: 20px 0;
 	overflow-y: auto;/*Used to ensure that the menu is scrollable when there are too many items to fit onto the screen*/
-	right: 60px;
+	right: 80px;
 	background: #1a1a1a;/*CHANGE BACKGROUND COLOR*/
-	width: 200px;/*CHANGE WIDTH*/
+	width: 680%;/*CHANGE WIDTH*/
 	height: 100%;/*CHANGE HEIGHT*/
+	margin-left: 168%;
 }
 
 .menu .social-icons a{
@@ -34,7 +35,7 @@
 
 .menu h1.logo a {/*NAME THAT APPEARS ON THE TOP*/
 	font-family: 'Open Sans', sans-serif;
-	font-size: 15px;
+	font-size: 18px;
 	color: #D500F9;
 	letter-spacing: 0.15em;
 	line-height: 40px;
@@ -45,6 +46,7 @@
 		-ms-transition: all 1s ease;
 		 -o-transition: all 1s ease;
 			transition: all 1s ease;
+	margin-left: 1080px;
 }
 
 .menu h1.logo a:hover {/*Hover Effects for name on the top*/
@@ -59,7 +61,7 @@
 .menu a {/*CONFIGURATION FOR MENU ITEMS*/
 	color: #808080;/*CHANGE COLOR OF MENU ITEMS*/
 	display: block;
-	font-size: 12px;/*CHANGE FONT SIZE*/
+	font-size: 18px;/*CHANGE FONT SIZE*/
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 100;
 	line-height: 35px;
@@ -71,6 +73,7 @@
 		-ms-transition: all .7s ease;
 		 -o-transition: all .7s ease;
 			transition: all .7s ease;
+		margin-left: 1080px;
 }
 
 
