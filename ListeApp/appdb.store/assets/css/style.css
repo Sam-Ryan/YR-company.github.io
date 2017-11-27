@@ -227,3 +227,222 @@ margin: 20px 10px;
 	border-top: 1px solid rgba(255,255,255,1);
 }
 
+
+
+
+
+
+
+
+
+* { margin: 0; padding: 0; }
+html, body {
+  background: #222;
+}
+#nav {
+  list-style: none;
+  width: 638px;
+  height: 100px;
+  margin: 40px auto;
+  border: 2px solid #000;
+  border-radius: 6px 6px 0 0;
+}
+.mid {
+  background: #00AEE9;
+  border-top: 2px solid #8bd1e8 !important;
+  border-bottom: 2px solid #002633;
+   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#00b6f2), to(#007399));
+   background-image: -webkit-linear-gradient(top, #00b6f2, #007399) !important; 
+   background-image:    -moz-linear-gradient(top, #00b6f2, #007399) !important;
+   background-image:     -ms-linear-gradient(top, #00b6f2, #007399) !important;
+   background-image:      -o-linear-gradient(top, #00b6f2, #007399) !important;
+}
+.mid:active {
+  border-top: 2px solid #00AEE9 !important;
+  border-bottom: 2px solid #8bd1e8;
+   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#007399), to(#00b6f2));
+   background-image: -webkit-linear-gradient(bottom, #00b6f2, #007399) !important; 
+   background-image:    -moz-linear-gradient(bottom, #00b6f2, #007399) !important;
+   background-image:     -ms-linear-gradient(bottom, #00b6f2, #007399) !important;
+   background-image:      -o-linear-gradient(bottom, #00b6f2, #007399) !important;
+}
+#nav li img {
+  width: 86px;
+  margin-left: 20px;
+  opacity: 0.8;
+}
+#nav li img:active {
+  opacity: 0.6;
+}
+#nav li {
+  display: block;
+  float: left;
+  width: 126px;
+  border-top: 2px solid #808080;
+  border-right: 2px solid #000;
+  border-bottom: 1px solid #333;
+  box-shadow: inset 0 0 2px #555;
+  height: 97px;
+  background: #333;
+   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#333), to(#111));
+   background-image: -webkit-linear-gradient(top, #333, #111); 
+   background-image:    -moz-linear-gradient(top, #333, #111);
+   background-image:     -ms-linear-gradient(top, #333, #111);
+   background-image:      -o-linear-gradient(top, #333, #111);
+}
+#nav li:active {
+  border-top: 2px solid #333;
+   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#222), to(#333));
+   background-image: -webkit-linear-gradient(bottom, #333, #222);
+   background-image:    -moz-linear-gradient(bottom, #333, #222);
+   background-image:     -ms-linear-gradient(bottom, #333, #222);
+   background-image:      -o-linear-gradient(bottom, #333, #222);
+}
+#nav li:first-child {
+  border-radius: 6px 0 0 0;
+}
+#nav li:last-child {
+  border-radius: 0 6px 0 0;
+  border-right: 0 solid #000;
+}
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px)
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+}
