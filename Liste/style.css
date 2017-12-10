@@ -614,3 +614,45 @@ body {
 h1, h2, h3, p, div, button, input {
   font-family: "Roboto", UILanguageFont, Arial, sans-serif;
 }
+
+
+.button18 {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 5px 5px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 1px;
+    align-content: center;
+    left: 10px;
+}
+
+.btn-app-store{
+    background: black;
+	color: white;
+	position: relative;
+	height: 20px;
+	padding-left: 55px;
+	padding-right: 20px;
+}
+.btn-app-store i{
+	font-size: 18px;
+	position: absolute;
+	left: 10px;
+}
+.btn-app-store .small{
+	display: block;
+	font-size: 12px;
+	line-height: 12px;
+	margin-bottom: 2px;
+    margin-top: 5px;
+}
+.btn-app-store .big{
+	display: block;
+	text-align: left;
+	font-size: 16px;
+	line-height: 16px;
+}
