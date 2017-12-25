@@ -1,0 +1,194 @@
+﻿/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-image: 
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* GENERAL */
+
+body {background:url('../images/applications.jpg'); font-family:'Open Sans', Arial, Verdana, Tahoma, helvetica, sans-serif; color:#444; margin:0 auto;}
+#wrapper {background:url('../images/header-bg.png') no-repeat top center; max-width:1900px;}
+del {margin-right:10px;}
+
+/* HEADER */
+
+header {text-align:center;}
+header h1 {padding:30px 0;}
+header p {font:35px "Open Sans Condensed"; color:#fff; width:700px; margin:auto;}
+header p span {position:absolute; display:block; margin-left:660px;}
+
+/* BODY CONTENT */
+
+#offers {width:960px; margin:30px auto 10px auto; height:600px;}
+#offers article {width:320px; height:200px; display:inline-block; overflow:hidden;}
+
+/* FIRST TOP BLOCK */
+
+#offers .offer-one {position:absolute; margin-left:320px;}
+	#offers .offer-one:hover {width:640px;}
+	
+.offer-one .products-visible {width:315px; border-right:5px solid #444; float:left; height:200px; text-align:center; cursor:pointer;}
+	.offer-one .products-visible p {margin:25px 0; font-size:18px;}
+	
+.offer-one .products-details {width:320px; float:left; background:#444; display:table;  height:200px; color:#fff; font-size:14px;}
+	.offer-one .products-details ul {float:left; height:200px;}
+	
+.offer-one .prod-desc {width:180px; border-right:1px solid #4c4c4c; font-size:14px; margin-left:9px; padding-top:10px;}
+	.offer-one .prod-desc li {padding:5px 0;}
+	
+.offer-one .prod-links {width:129px; border-left:1px solid #2f2f2f; font-size:11px; font-weight:600; background:#3d3d3d;}
+	.offer-one .prod-links li {border-top:1px solid #4c4c4c; border-bottom:1px solid #2f2f2f; padding:12px 0 12px 11px;}
+	.offer-one .prod-links a {color:#fff; line-height:135%; text-decoration:none;}
+	.offer-one .prod-links a:hover {color:#00ff15; text-decoration:underline;}
+	
+.offer-one .price-tag {background:url('../images/price-tag.png') no-repeat 12px center; text-indent:27px; font-size:14px;}
+
+/* SECOND RIGHT BLOCK */
+
+#offers .offer-two {position:absolute; margin:200px 0 0 640px;}
+	#offers .offer-two:hover {height:400px; margin-top:200px;}
+	
+.offer-two .products-visible {width:320px; border-bottom:5px solid #ff4747; float:left; height:195px; text-align:center; cursor:pointer;}
+	.offer-two .products-visible p {margin:25px 0; font-size:18px;}
+	
+.offer-two .products-details {width:320px; float:left; background:#ff4747; display:table;  height:200px; color:#fff; font-size:14px;}
+	.offer-two .products-details ul {float:left; height:200px;}
+	
+.offer-two .prod-desc {width:177px; border-right:1px solid #fd6060; font-size:14px; margin-left:12px; padding-top:10px;}
+	.offer-two .prod-desc li {padding:5px 0;}
+	
+.offer-two .prod-links {width:129px; border-left:1px solid #8b2e2e; font-size:11px; font-weight:600; background:#b53f3f;}
+	.offer-two .prod-links li {border-top:1px solid #d14848; border-bottom:1px solid #8b3131; padding:12px 0 12px 11px;}
+	.offer-two .prod-links a {color:#fff; line-height:135%; text-decoration:none;}
+	.offer-two .prod-links a:hover {color:#ffd200; text-decoration:underline;}
+	
+.offer-two .price-tag {background:url('../images/price-tag.png') no-repeat 12px center; text-indent:27px; font-size:14px;}
+
+/* THIRD BOTTOM BLOCK */
+
+#offers .offer-three {position:absolute; margin:400px 0 0 320px;}
+	#offers .offer-three:hover {width:640px; margin-left:0;}
+
+.offer-three .products-visible {width:315px; float:right; text-align:center; cursor:pointer;}
+	.offer-three .products-visible p {margin:25px 0; font-size:18px;}
+	
+.offer-three .products-details {width:320px; float:right; background:#01b0d6; display:table;  height:200px; color:#fff; font-size:14px;}
+	.offer-three .products-details ul {float:right; height:200px;}
+	
+.offer-three .prod-desc {width:177px; border-left:1px solid #017f9b; font-size:14px; margin-right:12px; text-align:right; padding-top:10px;}
+	.offer-three .prod-desc li {padding:5px 0;}
+	
+.offer-three .prod-links {width:129px; border-right:1px solid #02abd0; font-size:11px; font-weight:600; background:#0193b3;}
+	.offer-three .prod-links li {border-top:1px solid #02abd0; border-bottom:1px solid #017f9b; padding:12px 0 12px 11px;}
+	.offer-three .prod-links a {color:#fff; line-height:135%; text-decoration:none;}
+	.offer-three .prod-links a:hover {color:#61fffd; text-decoration:underline;}
+	
+.offer-three .price-tag {background:url('../images/price-tag.png') no-repeat 12px center; text-indent:27px; font-size:14px;}
+.offer-three .price-tag span {margin-left:5px;}
+
+
+
+/* FOURTH LEFT BLOCK */
+
+#offers .offer-four {position:absolute; margin-top:0; height:400px; clip:rect(200px,320px,400px,0px);}
+	#offers .offer-four:hover {clip:rect(0px,320px,400px,0px);}
+
+.offer-four .products-visible {width:320px; border-top:5px solid #9976b7; height:195px; text-align:center; cursor:pointer;}
+	.offer-four .products-visible p {margin:25px 0; font-size:18px;}
+	
+.offer-four .products-details {width:320px; background:#9976b7; display:table; color:#fff; font-size:14px;}
+	.offer-four .products-details ul {float:right;}
+	
+.offer-four .prod-desc {width:177px; border-left:1px solid #6f5189; font-size:14px; margin-right:12px; text-align:right; padding-top:10px; height:190px;}
+	.offer-four .prod-desc li {padding:5px 0;}
+	
+.offer-four .prod-links {width:129px; border-right:1px solid #8f69b1; font-size:11px; font-weight:600; background:#7b5a98;}
+	.offer-four .prod-links li {border-top:1px solid #8f69b1; border-bottom:1px solid #6b4e84; padding:12px 0 12px 11px;}
+	.offer-four .prod-links a {color:#fff; line-height:135%; text-decoration:none;}
+	.offer-four .prod-links a:hover {color:#deff85; text-decoration:underline;}
+	
+.offer-four .price-tag {background:url('../images/price-tag.png') no-repeat 12px center; text-indent:27px; font-size:14px;}
+
+.prod-links a img:hover {opacity:0.9;}
+
+
+/* CENTER BLOCK */
+
+#offers .gift {position:absolute; margin:200px 0 0 320px; text-align:center; background:goldenrod; border: red solid 6px;}
+#offers .gift img {margin:20px auto 5px auto;}
+#offers .gift p {font:30px "Open Sans Condensed";}
+
+
+/* SUBSCRIBE FORM */
+
+#subscribe-form {width:960px; margin:50px auto 30px auto; display:table;}
+
+#s-form {float:left;}
+#more-button {float:right;}
+#more-button a img:hover {opacity:0.9;}
+
+#snow {position:absolute; margin:12px 0 0 10px;}
+
+#form {padding:8px 0 0 36px;}
+#form ul {width:488px; background:url('../images/subscribe-bg.png') no-repeat center center; display:table; padding-left:15px;}
+#form ul li {float:left; height:40px; padding:6px 0;}
+#form ul li:first-child {background:url('../images/textbox-bg.png') no-repeat left center; width:320px;}
+form ul li:first-child input {margin:3px 0 0 3px; height:22px; padding:5px 0 5px 10px; font:16px 'Source Sans Pro', Arial, Verdana, Tahoma, helvetica, sans-serif; width:300px; background:none; border:0; color:#fff;}
+#form ul li:last-child input {margin-top:-6px;}
+
+/* FOOTER */
+
+footer {background:url('../images/footer-bg.png') no-repeat center center; height:148px;}
+footer div {display:table; width:940px; margin:auto; padding:0 10px;}
+footer div p {float:left; font-size:14px; color:#fff;}
+.copyright {padding-top:5px;}
+footer div ul li {float:left; margin-left:10px;}
+footer div ul {float:right;}
+footer ul {display:table;}
+
+#shipping {margin-bottom:50px; padding-top:30px;}
+#shipping p {background:url('../images/truck.png') no-repeat left center; padding-left:40px; font-size:20px;}
