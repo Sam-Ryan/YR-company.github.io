@@ -343,6 +343,22 @@ input::-moz-placeholder {
     color: #fff;
 }
 
+.btn-blue18 {
+    background-color: white;
+    text-transform: uppercase;
+    font-size: 17px;
+    padding: 16px 36px;
+    color: black;
+}
+
+.btn-blue1818 {
+    background-color: white;
+    text-transform: uppercase;
+    font-size: 17px;
+    padding: 16px 36px;
+    color: #2c2f33;
+}
+
 .btn-ash {
     background-color: #cacbca;
     color: #555;
