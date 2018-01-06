@@ -444,11 +444,18 @@
   grid-column: -1 / 1;
   font-weight: 100;
   font-size: 28px;
+  width: 100%;}
+
+.apps-title18 {
+  grid-column: -1 / 1;
+  font-weight: 100;
+  font-size: 28px;
   width: 100%;
+  color: white;
 }
 
 .app {
-  background: goldenrod;
+  background: #2c2f33;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   border-radius: 2px;
@@ -498,7 +505,8 @@
   white-space: nowrap;
   overflow: hidden;
   position: relative;
-  font-size: 16px;
+  font-size: 20px;
+  color: white;
 }
 .app-title:before {
   counter-increment: numapps;
@@ -520,6 +528,7 @@
   position: absolute;
   right: 10px;
   bottom: 10px;
+  font-weight: bold;
 }
 
 .app-rating {
@@ -608,6 +617,7 @@ html, body {
 
 body {
   counter-reset: numapps;
+  background-color: #23272a;
 }
 
 h1, h2, h3, p, div, button, input {
@@ -664,14 +674,15 @@ h1, h2, h3, p, div, button, input {
     border: 0.16em solid white;
   	border-radius: 5em;
     color: white;
-    padding: 6px 5px 6px 16px ;
+    padding: 6px 16px 6px 16px ;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 6px 38px 10px;
+    margin: 6px 10px 10px;
     align-content: center;
     left: 10px;
+    font-size: 12px;
 }
 i {
   margin: 0 .75em 0 0;
