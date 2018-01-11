@@ -705,3 +705,58 @@ i {
 
 	font-size: 0.1px;
 }
+.home-getstarted {
+    background-color: #ff0;
+    overflow: hidden;
+    z-index: 10;
+    text-align: center;
+    padding: 115px 0 15px;
+  }
+  .home-getstarted-cta {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    z-index: 1;
+}
+.home-getstarted-image {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    z-index: 0;
+    margin-top: 20px;
+}
+
+.home-getstarted .container {
+    position: relative;
+    display: block;
+    max-width: 1180px;
+    width: 85%;
+    margin: auto;
+}
+
+.home-getstarted-cta a {
+    position: relative;
+    display: inline-block;
+    height: 44px;
+    margin-top: 34px;
+    padding-right: 28px;
+    padding-left: 28px;
+    border: 2px solid #000;
+    border-radius: 24px;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: .12em;
+}
+.home-getstarted-cta h3 {
+    position: relative;
+    width: 59.32%;
+    margin: auto;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.4;
+    color: #000;
+}
