@@ -603,17 +603,7 @@ article.portfolio .image:hover:before {
   top: 50%;
   opacity: 1;
 }
-article.portfolio .image:after {
-  position: absolute;
-  width: 60%;
-  height: 60%;
-  top: 0;
-  background: rgba(0, 0, 0, 0.5);
-  content: '';
-  opacity: 0;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
+
 article.portfolio .image:hover:after {
   opacity: 1;
 }
@@ -1487,7 +1477,7 @@ iframe {
 /* Spacing */
 .inner {
   padding: 40px;
-  background: #384449;
+  background: #ffffff;
 }
 .inner > * {
   margin-bottom: 30px;
