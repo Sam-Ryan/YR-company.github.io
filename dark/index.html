@@ -4,7 +4,7 @@
 
 		<!-- Meta -->
 		<meta charset="UTF-8">
-		<title>YouStore</title>
+		<title>YouStore | Applications</title>
 		<meta name="keywords" content="Rayleigh, HTML5 Template, Minimalistic, Elegant, Creative, Clean">
 		<meta name="description" content="Rayleigh - Minimalistic and Elegant HTML Template">
 		<meta name="author" content="R6 Themes">
@@ -28,15 +28,7 @@
 	</head>
 
 	<body>
-		
-    <input type="hidden" name="auto_open" data-twitter="true" data-android="true" value="snapchat://add/rayannairline?sc_referrer=&link=%2Fadd%2Frayannairline&sc_ua=Mozilla%2F4.5+%28compatible%3B+HTTrack+3.0x%3B+Windows+98%29&cid=65c805ea-2dec-4981-8cf9-3b8b99d62f8f">
-    <input type="hidden" name="auto_open" data-chrome="true" data-samsung="false" data-twitter="false" data-facebook="false" data-android="true" value="snapchat://add/rayannairline?sc_referrer=&link=%2Fadd%2Frayannairline&sc_ua=Mozilla%2F4.5+%28compatible%3B+HTTrack+3.0x%3B+Windows+98%29&cid=65c805ea-2dec-4981-8cf9-3b8b99d62f8f">
-    <input type="hidden" name="auto_open" data-chrome="false" data-facebook="false" data-twitter="false" data-android="true" value="snapchat://add/rayannairline?sc_referrer=&link=%2Fadd%2Frayannairline&sc_ua=Mozilla%2F4.5+%28compatible%3B+HTTrack+3.0x%3B+Windows+98%29&cid=65c805ea-2dec-4981-8cf9-3b8b99d62f8f">
-    <input type="hidden" name="auto_open" data-twitter="true" data-ios="true" value="snapchat://add/rayannairline?sc_referrer=&link=%2Fadd%2Frayannairline&sc_ua=Mozilla%2F4.5+%28compatible%3B+HTTrack+3.0x%3B+Windows+98%29&cid=65c805ea-2dec-4981-8cf9-3b8b99d62f8f">
-    <input type="hidden" name="auto_open" data-facebook="true" data-ios="true" value="snapchat://add/rayannairline?sc_referrer=&link=%2Fadd%2Frayannairline&sc_ua=Mozilla%2F4.5+%28compatible%3B+HTTrack+3.0x%3B+Windows+98%29&cid=65c805ea-2dec-4981-8cf9-3b8b99d62f8f">
-    <input type="hidden" name="auto_open" data-twitter="false" data-facebook="false" data-ios="true" value="snapchat://add/rayannairline?sc_referrer=&link=%2Fadd%2Frayannairline&sc_ua=Mozilla%2F4.5+%28compatible%3B+HTTrack+3.0x%3B+Windows+98%29&cid=65c805ea-2dec-4981-8cf9-3b8b99d62f8f">
 
-    <input type="hidden" id="android_install_uri" value="market://details?id=com.snapchat.android&referrer=source%3Ddeeplink%26link%3D%252Fadd%252Frayannairline%26cid%3D65c805ea-2dec-4981-8cf9-3b8b99d62f8f">
 		<!-- Preloader -->
 		<div id="preloader">
 			<div id="status"></div>
@@ -56,11 +48,8 @@
 				<img src="img/new.png" alt="Rayleigh">
 			</header>
 
-			<!-- Fullscreen slider navigation arrows -->
-			<nav id="nav-arrows">
-				<a href="#" class="nav-left hidden"></a>
-				<a href="#" class="nav-right"></a>
-			</nav>
+			<!-- Portfolio close button -->
+			<a href="#" id="portfolio-close"></a>
 
 		</div>
 		
@@ -68,34 +57,141 @@
 		<div id="main-wrapper">
 
 			<!-- Content -->
-			<div id="content">
+			<div id="content" class="isotope-container">
 
-				<!-- Fullscreen slider -->
-				<div id="fullscreen-slider" class="swiper-container">
-					<div class="swiper-wrapper">
+				<!-- Fluid container -->
+				<div class="container-fluid">
+					
+					<!-- Page heading -->
+					<div id="heading" class="row">
+						<div class="filter col-12">
 
-						<!-- Slide -->
-						<div class="swiper-slide overlay overlay-dark-25 white" style="background-image: url(img/paralax1.jpg)">
-							<h1>YouStore, votre Store d'applications</h1>
+							<header>
+								<h1>Top Apps</h1>
+								<h2>Les meilleures applications</h2>
+							</header>
+
+							<!-- Filters -->
+							<div class="filter-dropdown">
+								<div class="selected"><span class="name">Filtre:</span> <span class="val">Tous</span></div>
+								<ul>
+									<li data-filter="*">Tous</li>
+									<li data-filter=".3d">Apps</li>
+									<li data-filter=".buildings">Jeux</li>
+									<li data-filter=".design">Gratuite</li>
+									<li data-filter=".nature">Payante</li>
+								</ul>
+								<div class="arrow"></div>
+							</div>
+
 						</div>
+					</div>
 
-						<!-- Slide -->
-						<div class="swiper-slide overlay overlay-dark-50 white" style="background-image: url(img/slides/2.jpg)">
-							<h1>Bientot disponible</h1>
-						</div>
-
-						<!-- Slide -->
-						<div class="swiper-slide overlay overlay-dark-25 white" style="background-image: url(img/slides/3.jpg)">
-							<h1>Pour vos plus grands besoins</h1>
-						</div>
-
-						<!-- Slide -->
-						<div class="swiper-slide overlay overlay-grid-2 white">
-							<video src="img/slides/4.mp4" width="640" height="360" loop></video>
-							<h1>Video example</h1>
-						</div>
+					<!-- Main content -->
+					<div class="isotope isotope-2 row">
+							
+						<!-- Portfolio item -->
+						<article class="portfolio isotope-item buildings design col-6">
+							<a href="#portfolio-item-example" class="image" style="background-image: url(img/unnamed.png)"></a>
+							<div class="inner">
+								<header>
+									<h3>Snapchat</h3>
+								</header>
+							</div>
+						</article>
+						
+						<!-- Portfolio item -->
+						<article class="portfolio isotope-item buildings col-6">
+							<a href="https://goo.gl/qi3FbP" class="image" style="background-image: url(img/spotify.png)"></a>
+							<div class="inner">
+								<header>
+									<a href="https://goo.gl/qi3FbP">
+									<h3>Spotify</h3>
+									</a>
+								</header>
+							</div>
+						</article>
+						
+						<!-- Portfolio item -->
+						<article class="portfolio isotope-item nature design col-6">
+							<a href="https://goo.gl/oB1Nmw" class="image" style="background-image: url(img/dezzer.png)"></a>
+							<div class="inner">
+								<header>
+									<a href="https://goo.gl/oB1Nmw">
+									<h3>Deezer</h3>
+									</a>
+								</header>
+							</div>
+						</article>
+						
+						<!-- Portfolio item -->
+						<article class="portfolio isotope-item design 3d col-6">
+							<a href="#portfolio-item-example" class="image" style="background-image: url(img/tvicon.png)"></a>
+							<div class="inner">
+								<header>
+									<h3>BEIN</h3>
+								</header>
+							</div>
+						</article>
+						
+						<!-- Portfolio item -->
+						<article class="portfolio isotope-item design col-6">
+							<a href="#portfolio-item-example" class="image" style="background-image: url(img/2k18icon.png)"></a>
+							<div class="inner">
+								<header>
+									<h3>NBA 2K18</h3>
+								</header>
+							</div>
+						</article>
+						
+						<!-- Portfolio item -->
+						<article class="portfolio isotope-item nature col-6">
+							<a href="#portfolio-item-example" class="image" style="background-image: url(img/cydia-1900000295-icon.png)"></a>
+							<div class="inner">
+								<header>
+									<h3>Jodel</h3>
+								</header>
+							</div>
+						</article>
+						
+						<!-- Portfolio item -->
+						<article class="portfolio isotope-item buildings 3d col-6">
+							<a href="#portfolio-item-example" class="image" style="background-image: url(img/vkicon.png)"></a>
+							<div class="inner">
+								<header>
+									<h3>VK</h3>
+								</header>
+							</div>
+						</article>
+						
+						<!-- Portfolio item -->
+						<article class="portfolio isotope-item buildings 3d col-6">
+							<a href="#portfolio-item-example" class="image" style="background-image: url(img/soundcloudicon.png)"></a>
+							<div class="inner">
+								<header>
+									<h3>SoundCloud</h3>
+								</header>
+							</div>
+						</article>
 
 					</div>
+
+					<!-- Pagination -->
+					<div class="pagination-row row">
+						<div class="col-12">
+							
+							<ul class="pag">
+								<li><a href="#">&laquo;</a></li>
+								<li class="active"><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">&raquo;</a></li>
+							</ul>
+
+						</div>
+					</div>
+
 				</div>
 
 			</div>
@@ -109,26 +205,13 @@
 					<!-- Main menu -->
 					<nav id="mainmenu">
 						<ul>
-							<li><a href="index-2.html" class="active">Accueil</a></li>
-							<li><a href="services.html">Applications</a>
-								<ul>
-								    <li><a href="portfolio-2.html">Applications</a></li>
-									<li><a href="portfolio-3.html">Jeux</a></li>
-									<li><a href="portfolio-4.html">Payante</a></li>
-								</ul>
-							</li>
-							<li><a href="blog.html">Filtres</a></li>
-							<li><a href="team.html">Espace client</a></li>
+							<li><a href="index-2.html">Accueil</a></li>
+							<li><a href="services.html">Services</a></li>
 							<li>
-								<a href="#">Services</a>
-								<ul>
-									<li><a href="404.html">404 page</a></li>
-									<li><a href="elements.html">Elements</a></li>
-									<li><a href="grid.html">Grid System</a></li>
-									<li><a href="blog-single.html">Single Post</a></li>
-								</ul>
+								<a href="#" class="active">Apps</a>
 							</li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="team.html">Team</a></li>
+							<li><a href="mailto:ips.official.server@gmail.com">Contact</a></li>
 						</ul>
 					</nav>
 
@@ -141,12 +224,75 @@
 
 			</div>
 
+			<!-- Portfolio full -->
+			<div id="portfolio-item-example" class="portfolio-full portfolio-full-slidedown">
+
+				<!-- Portfolio description -->
+				<div class="portfolio-description">
+					<h3>Snapchat</h3>
+					<p>La meilleure applications modifié pour la libre utilisation de votre réseaux social préféré. Filtres, Upload et Enregistrements </p>
+					<div class="icon-text">
+						<i class="fa fa-calendar-o"></i>
+						<p>1 ans renouvelable 150€</p>
+					</div>
+					<div class="icon-text">
+						<i class="fa fa-users"></i>
+						<p>300 Clients satisfaits</p>
+					</div>
+					<div class="icon-text">
+						<i class="fa fa-thumb-tack"></i>
+						<p><a href="#">Commander</a></p>
+					</div>
+				</div>
+				
+				<!-- Portfolio full -->
+			<div id="portfolio-item-example" class="portfolio-full portfolio-full-slidedown">
+
+				<!-- Portfolio description -->
+				<div class="portfolio-description">
+					<h3>Spotify</h3>
+					<p>La meilleure applications musicale modifié. </p>
+					<div class="icon-text">
+						<i class="fa fa-calendar-o"></i>
+						<p>Gratuit</p>
+					</div>
+					<div class="icon-text">
+						<i class="fa fa-users"></i>
+						<p>36000 Clients satisfaits</p>
+					</div>
+					<div class="icon-text">
+						<i class="fa fa-thumb-tack"></i>
+						<p><a href="#">Télécharger</a></p>
+					</div>
+				</div>
+
+				<!-- Portfolio image slider -->
+				<div class="swiper swiper-container">
+
+					<div class="swiper-wrapper">
+
+						<!-- Slide -->
+						<div class="swiper-slide" style="background-image: url(img/portfolio-images/9.jpg)"></div>
+
+						<!-- Slide -->
+						<div class="swiper-slide" style="background-image: url(img/portfolio-images/10.jpg)"></div>
+
+						<!-- Slide -->
+						<div class="swiper-slide" style="background-image: url(img/portfolio-images/11.jpg)"></div>
+
+					</div>
+
+					<!-- Slider navigation arrows -->
+					<a class="nav-arrow nav-left" href="#"></a>
+					<a class="nav-arrow nav-right" href="#"></a>
+
+				</div>
+
+			</div>
+
 		</div>
 
 		<!-- JavaScripts -->
-		<script type="text/javascript" src="https://www.snapchat.com/deeplink/static/js/jquery.min.js"></script>
-		<script type="text/javascript" src="https://www.snapchat.com/deeplink/static/js/deeplink.js?x=0"></script>
-		<script type="text/javascript" src="https://www.snapchat.com/deeplink/static/js/sc-web-frame.js"></script>
 		<script type='text/javascript' src='js/jquery.min.js'></script>
 		<script type='text/javascript' src='js/bootstrap.min.js'></script>
 		<script type='text/javascript' src='js/swiper/idangerous.swiper.min.js'></script>
