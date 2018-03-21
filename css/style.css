@@ -296,7 +296,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
 
 body {
 	font-family: 'Hind', sans-serif;
-	background: #2c2f33;
+	background: #23272a;
 	line-height: 1.5;
 	font-size:15px;
 	color: #000;
@@ -468,8 +468,9 @@ button.block{
 5. Links
 ==============================================================*/
 a {
-	color: #0378AD;
+	color: orangered;
 	text-decoration:underline;
+	font-weight: bold;
 }
 
 a:visited {
