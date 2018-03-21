@@ -410,7 +410,7 @@ button.block{
 	margin:0 0 5px 0;
 	font-size: 18px;
 	font-weight: 500;
-	color: #000;
+	color: white;
 	border-bottom: 1px solid #ddd;
 	position: relative;
 }
@@ -1393,10 +1393,11 @@ span.pull-left {
 .category-list li .category-ctn .cat-name a {
 	font-weight: 700;
 	text-decoration: none;
-	color: rgba(0,0,0,0.87);
+	color: white;
+	font-weight: bold;
 }
 .category-list li .category-ctn .cat-desc {
-	color: #666;
+	color: white;
 	font-size: 13px;
 	line-height: 15px;
 }
