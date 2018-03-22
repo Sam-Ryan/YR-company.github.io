@@ -1375,7 +1375,6 @@ span.pull-left {
 .category-list li {
 	width: calc(50% - 1px);
 	float: left;
-	border: 2px solid #eee;
 }
 .category-list li .thumb {
 	height: 160px;
