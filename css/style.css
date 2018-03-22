@@ -411,7 +411,6 @@ button.block{
 	font-size: 18px;
 	font-weight: 500;
 	color: white;
-	border-bottom: 1px solid #ddd;
 	position: relative;
 }
 .page-block .block-title span {
@@ -1248,7 +1247,6 @@ span.pull-left {
 .product-list-slider li {
 	width: calc(50% - 4px);
 	float: left;
-	border: 1px solid #eee;
 	margin: 2px;
 	outline:0;
 }
