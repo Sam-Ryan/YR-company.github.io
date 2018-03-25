@@ -77,10 +77,10 @@ if (qrStr) {
           trackPageName();
           updateInstallationMessage(appTitle);
           if (response.versions.length > 1) {
-            document.getElementById('installButton').textContent = "Install Latest Version";
+            document.getElementById('installButton').textContent = "Installer Dernière Version";
             updatePreviousBuild(response.versions);
           } else {
-            document.getElementById('installButton').textContent = "Install Application";
+            document.getElementById('installButton').textContent = "Installer Application";
             document.getElementById('showAllBuildButton').hidden = true;
           }
           showHome();
@@ -116,8 +116,8 @@ function installApp(menifest) {
 
 //Update installation message
 function updateInstallationMessage(title) {
-  document.getElementById('installationTitle').textContent = "By now, you should have seen an iOS popup proposing to install \"" + title
-    + "\" .  Please confirm the installation dialog, then press your Home button to see the installation progress. ";
+  document.getElementById('installationTitle').textContent = "À ce stade, vous devriez avoir vu un popup iOS proposant d'installer \"" + title
+    + "\" .Veuillez confirmer la boîte de dialogue d'installation, puis appuyez sur le bouton Accueil pour voir la progression de l'installation. ";
 }
 
 
